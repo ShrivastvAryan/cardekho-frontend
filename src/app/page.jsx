@@ -1,13 +1,15 @@
 import React from "react";
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import Image from 'next/image'
+import { Link, Tabs } from "@chakra-ui/react"
 
 const mainPage=()=>{
   return(
     <>
-    <h1>Hi there main pagehbhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-      bhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-    </h1>
-    <Button colorScheme='blue' className="my-10">Button</Button>
+    <div className="border-red-300 w-full h-80"></div>
+    <div className="my-10 p-2 bg-gray-200 w-11/12 h-80 mx-auto rounded-md" >
+      <div>
+      </div>
+    </div>
     </>
   )
 }
