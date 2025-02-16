@@ -4,7 +4,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: '',
+          hostname: 'cdn4.singleinterface.com',
         },
       ],
     },
