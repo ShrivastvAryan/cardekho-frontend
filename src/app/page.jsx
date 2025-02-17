@@ -15,7 +15,7 @@ const mainPage=()=>{
         <option value='M&M'>Mahindra</option>
         <option value='VW'>Volkswagen</option>
         </Select>
-        <Button colorScheme='red' size="sm" className=" mt-3">Search</Button>
+        <Button colorScheme='red' size="sm" className=" mt-3 mx-auto block">Search</Button>
       </div>
       <div>
       <Image 
@@ -58,7 +58,7 @@ const mainPage=()=>{
     gap={4}
     >
 
-    <GridItem rowSpan={2} colSpan={2} bg='tomato' />
+    <GridItem rowSpan={2} colSpan={2} bg='tomato' className="transition-transform duration-300 hover:scale-105" />
     <GridItem colSpan={2} bg='papayawhip' />
     <GridItem colSpan={2} bg='papayawhip' />
     <GridItem colSpan={2} bg='tomato' />
