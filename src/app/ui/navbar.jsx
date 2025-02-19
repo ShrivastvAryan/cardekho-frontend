@@ -1,28 +1,43 @@
+"use client";
+
 import React from "react";
-import{Tabs,TabList,Tab, AvatarGroup,Avatar,Link,TabPanels,TabPanel} from '@chakra-ui/react'
+import{Tabs,TabList,Tab, AvatarGroup,Avatar,TabPanels,TabPanel} from '@chakra-ui/react'
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Navbar=()=>{
+
+  const pathname = usePathname(); // Get current path
+
+  // Ensure pathname is defined before using it
+  if (!pathname) return null;
+
+  // Define active tab based on current route
+  const getTabIndex = () => {
+    switch (pathname) {
+      case "/discovercars":
+        return 1;
+      case "/electriccars":
+        return 2;
+      case "/about":
+        return 3;
+      default:
+        return 0;
+    }
+  };
+
     return(
         <>
         <div className="w-full bg-white shadow-md h-14 p-2 flex relative">
         <div className="mx-auto">
-        <Tabs variant='soft-rounded' colorScheme='red'>
+        <Tabs index={getTabIndex()} variant='soft-rounded' colorScheme='red'>
         <TabList>
-        <Tab>Home</Tab>
-        <Tab>Discover Cars</Tab>
+        <Tab as={Link} href="/">Home</Tab>
+        <Tab as={Link} href="/discovercars">Discover Cars</Tab>
         <Tab>Electric Cars</Tab>
         <Tab>About Us</Tab>
        </TabList>
-      
-
-       <TabPanels>
-         <TabPanel>
-          <a href="/"></a>
-         </TabPanel>
-         <TabPanel>
-          <a href="/discovercars"></a>
-         </TabPanel>
-       </TabPanels>
+    
        </Tabs>
 
        </div>

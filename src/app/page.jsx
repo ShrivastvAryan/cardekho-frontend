@@ -5,8 +5,15 @@ import { Link, Tabs,Tab,TabList,Grid,GridItem,Select,Button } from "@chakra-ui/r
 const mainPage=()=>{
   return(
     <>
-    <div className="flex">
-      <div className="w-72 h-80 bg-gray-200 ml-2 mr-3 rounded-md my-5 p-2">
+    <div className="flex bg-slate-600 h-96 relative w-full">
+
+    <Image 
+      src="https://cdn4.singleinterface.com/files/enterprise/coverphoto/76409/tata-17-04-24-10-55-58.jpg"
+      alt="Tata poster"
+      fill
+      className="object-cover"/>
+
+      <div className="w-72 h-36 bg-gray-200 ml-5 mr-3 rounded-md my-5 p-2 z-10">
         <p className="font-semibold text-lg text-center">Search By Car Brand</p>
         <Select bg="white" className="mt-2 font-semibold">
         <option value='M'>Maruti Suzuki</option>
@@ -17,14 +24,7 @@ const mainPage=()=>{
         </Select>
         <Button colorScheme='red' size="sm" className=" mt-3 mx-auto block">Search</Button>
       </div>
-      <div>
-      <Image 
-      src="https://cdn4.singleinterface.com/files/enterprise/coverphoto/76409/tata-17-04-24-10-55-58.jpg"
-      alt="Tata poster"
-      width={1000}
-      height={550}
-      className="content-end"/>
-      </div>
+     
     </div>
     <div className="my-5 p-2 bg-gray-100 w-11/12 h-80 mx-auto rounded-md" >
       <div>
@@ -58,11 +58,16 @@ const mainPage=()=>{
     gap={4}
     >
 
-    <GridItem rowSpan={2} colSpan={2} bg='tomato' className="transition-transform duration-300 hover:scale-105" />
-    <GridItem colSpan={2} bg='papayawhip' />
-    <GridItem colSpan={2} bg='papayawhip' />
-    <GridItem colSpan={2} bg='tomato' />
-    <GridItem colSpan={2}  bg='tomato' />
+    <GridItem rowSpan={2} colSpan={2} bg='tomato' className="transition-transform duration-300 hover:scale-105">
+      <div className=" w-full h-4/5 bg-black "></div>
+      <div className="text-4xl font-semibold text-center my-2">All new Tata Curvv !!</div>
+    </GridItem>
+
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
+    <div className="h-full w-2/4 bg-black"></div>
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
+    <GridItem colSpan={2}  bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
     </Grid>
     </div>
     </>
