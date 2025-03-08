@@ -6,6 +6,10 @@ const nextConfig = {
           protocol: 'https',
           hostname: 'cdn4.singleinterface.com',
         },
+        {
+          protocol:'https',
+          hostname:'images.moneycontrol.com',
+        },
       ],
     },
   };

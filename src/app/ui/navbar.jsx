@@ -19,7 +19,7 @@ const Navbar=()=>{
         return 1;
       case "/electriccars":
         return 2;
-      case "/about":
+      case "/aboutUs":
         return 3;
       default:
         return 0;
@@ -34,8 +34,8 @@ const Navbar=()=>{
         <TabList>
         <Tab as={Link} href="/">Home</Tab>
         <Tab as={Link} href="/discovercars">Discover Cars</Tab>
-        <Tab>Electric Cars</Tab>
-        <Tab>About Us</Tab>
+        <Tab as={Link} href="/electriccars">Electric Cars</Tab>
+        <Tab as={Link} href="/aboutUs">About Us</Tab>
        </TabList>
     
        </Tabs>

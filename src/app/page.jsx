@@ -50,7 +50,7 @@ const mainPage=()=>{
     </div>
 
     <div className="my-10 p-4 bg-gray-100 w-11/12 h-auto mx-auto rounded-md" >
-    <h1 className="text-2xl font-semibold p-2">Latest Updates</h1>
+    <h1 className="text-4xl font-semibold p-2 mb-4">Latest Updates</h1>
     <Grid
      h='360px'
     templateRows='repeat(2, 1fr)'
@@ -59,15 +59,35 @@ const mainPage=()=>{
     >
 
     <GridItem rowSpan={2} colSpan={2} bg='tomato' className="transition-transform duration-300 hover:scale-105">
-      <div className=" w-full h-4/5 bg-black "></div>
+      <div className=" w-full h-4/5  relative ">
+      <Image src="https://images.moneycontrol.com/static-mcnews/2022/04/4-tata-curvv.jpg"
+       alt="Tata poster"
+       fill
+       className="object-cover"/>
+      </div>
       <div className="text-4xl font-semibold text-center my-2">All new Tata Curvv !!</div>
     </GridItem>
 
-    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
-    <div className="h-full w-2/4 bg-black"></div>
-    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
-    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
-    <GridItem colSpan={2}  bg='tomato'  className="transition-transform duration-300 hover:scale-105" />
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105 flex">
+    <div className="bg-black h-full w-3/4"></div>
+    <div className="text-2xl p-2 font-sans font-semibold"> Will the new kylaq take on nexon?</div>
+    </GridItem>
+    
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105 flex">
+    <div className="bg-black h-full w-3/4"></div>
+    <div className="text-2xl p-2 font-sans font-semibold"> Will the new kylaq take on nexon?</div>
+    </GridItem>
+
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105 flex">
+    <div className="bg-black h-full w-3/4"></div>
+    <div className="text-2xl p-2 font-sans font-semibold"> Will the new kylaq take on nexon?</div>
+    </GridItem>
+
+    <GridItem colSpan={2} bg='tomato'  className="transition-transform duration-300 hover:scale-105 flex">
+    <div className="bg-black h-full w-3/4"></div>
+    <div className="text-2xl p-2 font-sans font-semibold"> Will the new kylaq take on nexon?</div>
+    </GridItem>
+
     </Grid>
     </div>
     </>
