@@ -41,7 +41,20 @@ const mainPage=()=>{
       </div>
       <div>
       <Grid templateColumns='repeat(4, 1fr)' gap={3} className="p-2 my-2">
-      <GridItem w='90%' h='60' bg='gray.200' className="rounded-md" />
+      <GridItem w='90%' h='60' bg='gray.200' className="rounded-md cursor-pointer">
+        <div className="p-2 w-full bg-red-500 h-3/5 relative">
+      <Image src="https://images.moneycontrol.com/static-mcnews/2022/04/4-tata-curvv.jpg"
+       alt="Tata poster"
+       fill
+       className="object-cover"/>
+      </div>
+
+        <div className="p-2 font-semibold text-xl">
+          <p className="font-extrabold">Tata Curvv ICE</p>
+          <p className="text-sm mt-1.5">Mileage:15-16 Kmpl</p>
+          <p className="text-sm mt-1.5">Starting: ₹ 10.99 Lac</p>
+          </div>
+      </GridItem>
       <GridItem w='90%' h='60' bg='gray.200' className="rounded-md" />
       <GridItem w='90%' h='60' bg='gray.200' className="rounded-md" />
       <GridItem w='90%' h='60' bg='gray.200' className="rounded-md" />

@@ -6,7 +6,7 @@ const electricCars=()=>{
         <>
          <div className="my-5 p-2 bg-gray-100 w-11/12 h-auto mx-auto rounded-md" >
               <div>
-              <Tabs colorScheme="red">
+              <Tabs colorScheme="green">
               <TabList className="font-semibold">
               <Tab>All</Tab>
               <Tab>Hatchback</Tab>
