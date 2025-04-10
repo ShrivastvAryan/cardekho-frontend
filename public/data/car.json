@@ -1,0 +1,15 @@
+[
+    {
+      "id": 101,
+      "name":"Tata Curvv",
+      "mileage":"12-15Kmpl",
+      "type":"SUV",
+      "fuel":"ICE"
+
+    },
+    {
+      "id": 2,
+      "label": "Mahindra Thar EV spotted testing",
+      "image": "/thar-ev.jpeg"
+    }
+  ]
