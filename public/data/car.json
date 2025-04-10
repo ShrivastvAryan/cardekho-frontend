@@ -1,15 +1,404 @@
-[
+
+  [
     {
       "id": 101,
-      "name":"Tata Curvv",
-      "mileage":"12-15Kmpl",
-      "type":"SUV",
-      "fuel":"ICE"
-
+      "name": "Tata Harrier",
+      "mileage": "14-16 Kmpl",
+      "type": "SUV",
+      "fuel": "Diesel",
+      "brand": "Tata",
+      "image": "/b1.webp",
+      "price": "₹15.49 - ₹26.44 Lakh"
     },
     {
-      "id": 2,
-      "label": "Mahindra Thar EV spotted testing",
-      "image": "/thar-ev.jpeg"
+      "id": 102,
+      "name": "Mahindra XUV700",
+      "mileage": "12-16 Kmpl",
+      "type": "MUV",
+      "fuel": "Petrol/Diesel",
+      "brand": "Mahindra",
+      "image": "/b2.webp",
+      "price": "₹14.03 - ₹26.57 Lakh"
+    },
+    {
+      "id": 103,
+      "name": "Hyundai Creta",
+      "mileage": "16-21 Kmpl",
+      "type": "SUV",
+      "fuel": "Petrol/Diesel",
+      "brand": "Hyundai",
+      "image": "/b3.jpg",
+      "price": "₹11 - ₹20.15 Lakh"
+    },
+    {
+      "id": 104,
+      "name": "Kia Seltos",
+      "mileage": "16-20 Kmpl",
+      "type": "SUV",
+      "fuel": "Petrol/Diesel",
+      "brand": "Kia",
+      "image": "/b4.jpeg",
+      "price": "₹10.90 - ₹20.35 Lakh"
+    },
+    {
+      "id": 105,
+      "name": "Toyota Fortuner",
+      "mileage": "10-14 Kmpl",
+      "type": "SUV",
+      "fuel": "Petrol/Diesel",
+      "brand": "Toyota",
+      "image": "/b5.webp",
+      "price": "₹33.43 - ₹51.44 Lakh"
+    },
+    {
+      "id": 106,
+      "name": "Tata Curvv",
+      "mileage": "12-15 Kmpl",
+      "type": "SUV",
+      "fuel": "ICE",
+      "brand": "Tata",
+      "image": "/b6.jpeg",
+      "price": "₹10 - ₹15 Lakh (Expected)"
+    },
+    {
+      "id": 201,
+      "name": "Tata Altroz",
+      "mileage": "18-23 Kmpl",
+      "type": "Hatchback",
+      "fuel": "Petrol/Diesel",
+      "brand": "Tata",
+      "image": "/b7.jpeg",
+      "price": "₹6.64 - ₹10.74 Lakh"
+    },
+    {
+      "id": 202,
+      "name": "Hyundai i20",
+      "mileage": "19-26 Kmpl",
+      "type": "Hatchback",
+      "fuel": "Petrol/CNG",
+      "brand": "Hyundai",
+      "image": "/b8.webp",
+      "price": "₹7.04 - ₹11.21 Lakh"
+    },
+    {
+      "id": 203,
+      "name": "Maruti Swift",
+      "mileage": "20-24 Kmpl",
+      "type": "Hatchback",
+      "fuel": "Petrol/CNG",
+      "brand": "Maruti Suzuki",
+      "image": "/b9.jpeg",
+      "price": "₹6.49 - ₹9.44 Lakh"
+    },
+    {
+      "id": 204,
+      "name": "Tata Punch EV",
+      "mileage": "315-421 Km/Charge",
+      "type": "Hatchback",
+      "fuel": "Electric",
+      "brand": "Tata",
+      "image": "/b10.jpg",
+      "price": "₹10.99 - ₹15.49 Lakh"
+    },
+    {
+      "id": 205,
+      "name": "Exter",
+      "mileage": "21-25 Kmpl",
+      "type": "Hatchback",
+      "fuel": "Petrol",
+      "brand": "Hyundai",
+      "image": "/b11.jpg",
+      "price": "₹6.13 - ₹10.28 Lakh"
+    },
+    {
+      "id": 301,
+      "name": "Volkswagen Virtus",
+      "mileage": "18-20 Kmpl",
+      "type": "Sedan",
+      "fuel": "Petrol",
+      "brand": "Volkswagen",
+      "image": "/b12.webp",
+      "price": "₹11.56 - ₹19.15 Lakh"
+    },
+    {
+      "id": 302,
+      "name": "Skoda Slavia",
+      "mileage": "18-20 Kmpl",
+      "type": "Sedan",
+      "fuel": "Petrol",
+      "brand": "Skoda",
+      "image": "/b13.jpeg",
+      "price": "₹11.63 - ₹19.12 Lakh"
+    },
+    {
+      "id": 303,
+      "name": "Maruti Suzuki Dzire",
+      "mileage": "22-24 Kmpl",
+      "type": "Sedan",
+      "fuel": "Petrol/CNG",
+      "brand": "Maruti Suzuki",
+      "image": "/b14.webp",
+      "price": "₹6.56 - ₹9.39 Lakh"
+    },
+    {
+      "id": 304,
+      "name": "Honda City",
+      "mileage": "17-18 Kmpl",
+      "type": "Sedan",
+      "fuel": "Petrol/Hybrid",
+      "brand": "Honda",
+      "image": "/b15.webp",
+      "price": "₹11.82 - ₹20.55 Lakh"
+    },
+    {
+      "id": 305,
+      "name": "Hyundai Verna",
+      "mileage": "18-20 Kmpl",
+      "type": "Sedan",
+      "fuel": "Petrol",
+      "brand": "Hyundai",
+      "image": "/b16.jpeg",
+      "price": "₹11 - ₹17.42 Lakh"
+    },
+    {
+      "id": 401,
+      "name": "Tata Safari",
+      "mileage": "14-16 Kmpl",
+      "type": "MUV",
+      "fuel": "Diesel",
+      "brand": "Tata",
+      "image": "/b17.jpeg",
+      "price": "₹16.19 - ₹27.34 Lakh"
+    },
+    {
+      "id": 402,
+      "name": "Hyundai Alcazar",
+      "mileage": "14-20 Kmpl",
+      "type": "MUV",
+      "fuel": "Petrol/Diesel",
+      "brand": "Hyundai",
+      "image": "/b18.jpeg",
+      "price": "₹16.77 - ₹21.28 Lakh"
+    },
+    {
+      "id": 404,
+      "name": "Mahindra Scorpio",
+      "mileage": "15-18 Kmpl",
+      "type": "MUV",
+      "fuel": "Diesel",
+      "brand": "Mahindra",
+      "image": "/b19.webp",
+      "price": "₹13.59 - ₹24.54 Lakh"
+    },
+    {
+      "id": 405,
+      "name": "Toyota Innova Crysta",
+      "mileage": "11-16 Kmpl",
+      "type": "MUV",
+      "fuel": "Petrol/Diesel",
+      "brand": "Toyota",
+      "image": "/b20.jpeg",
+      "price": "₹19.99 - ₹26.05 Lakh"
+    },
+    {
+      "id": 501,
+      "name": "Mercedes-Benz E-Class",
+      "mileage": "12-16 Kmpl",
+      "type": "Luxury",
+      "fuel": "Petrol/Diesel",
+      "brand": "Mercedes-Benz",
+      "image": "/b21.jpeg",
+      "price": "₹88 - ₹94 Lakh"
+    },
+    {
+      "id": 502,
+      "name": "BMW 5 Series",
+      "mileage": "14-17 Kmpl",
+      "type": "Luxury ",
+      "fuel": "Petrol/Diesel",
+      "brand": "BMW",
+      "image": "/b22.webp",
+      "price": "₹70 - ₹75 Lakh"
+    },
+    {
+      "id": 503,
+      "name": "Audi A6",
+      "mileage": "14-17 Kmpl",
+      "type": "Luxury",
+      "fuel": "Petrol",
+      "brand": "Audi",
+      "image": "/b23.jpeg",
+      "price": "₹64 - ₹70 Lakh"
+    },
+    {
+      "id": 504,
+      "name": "Jaguar XF",
+      "mileage": "10-14 Kmpl",
+      "type": "Luxury",
+      "fuel": "Petrol",
+      "brand": "Jaguar",
+      "image": "/b24.jpeg",
+      "price": "₹72 - ₹76 Lakh"
+    },
+    {
+      "id": 505,
+      "name": "Lexus ES",
+      "mileage": "20-22 Kmpl",
+      "type": "Luxury",
+      "fuel": "Hybrid (Petrol+Electric)",
+      "brand": "Lexus",
+      "image": "/b25.webp",
+      "price": "₹63.10 - ₹69.70 Lakh"
+    },
+    {
+      "id": 601,
+      "name": "Tata Nexon EV",
+      "mileage": "312-465 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Tata",
+      "price": "14.49 - 19.29 Lakh",
+      "image": ""
+    },
+    {
+      "id": 602,
+      "name": "MG ZS EV",
+      "mileage": "461 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "MG",
+      "price": "18.98 - 25.20 Lakh",
+      "image": ""
+    },
+    {
+      "id": 603,
+      "name": "Hyundai Kona Electric",
+      "mileage": "452 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Hyundai",
+      "price": "23.84 - 24.03 Lakh",
+      "image": ""
+    },
+    {
+      "id": 604,
+      "name": "Tata Tiago EV",
+      "mileage": "250-315 Km/Charge",
+      "type": "Hatchback",
+      "fuel": "Electric",
+      "brand": "Tata",
+      "price": "7.99 - 11.89 Lakh",
+      "image": ""
+    },
+    {
+      "id": 605,
+      "name": "Mahindra XUV400 EV",
+      "mileage": "375 - 456 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Mahindra",
+      "price": "15.49 - 19.39 Lakh",
+      "image": ""
+    },
+    {
+      "id": 606,
+      "name": "BYD Atto 3",
+      "mileage": "521 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "BYD",
+      "price": "33.99 Lakh",
+      "image": ""
+    },
+    {
+      "id": 607,
+      "name": "Citroen eC3",
+      "mileage": "320 Km/Charge",
+      "type": "Hatchback",
+      "fuel": "Electric",
+      "brand": "Citroen",
+      "price": "11.50 - 13.20 Lakh",
+      "image": ""
+    },
+    {
+      "id": 608,
+      "name": "Tata Punch EV",
+      "mileage": "315 - 421 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Tata",
+      "price": "10.99 - 15.49 Lakh",
+      "image": ""
+    },
+    {
+      "id": 609,
+      "name": "Volvo XC40 Recharge",
+      "mileage": "418 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Volvo",
+      "price": "57.90 Lakh",
+      "image": ""
+    },
+    {
+      "id": 610,
+      "name": "BMW i4",
+      "mileage": "590 Km/Charge",
+      "type": "Sedan",
+      "fuel": "Electric",
+      "brand": "BMW",
+      "price": "72.50 Lakh",
+      "image": ""
+    },
+    {
+      "id": 611,
+      "name": "Mercedes-Benz EQB",
+      "mileage": "423 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Mercedes-Benz",
+      "price": "77.50 Lakh",
+      "image": ""
+    },
+    {
+      "id": 612,
+      "name": "BMW iX1",
+      "mileage": "417 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "BMW",
+      "price": "66.90 Lakh",
+      "image": ""
+    },
+    {
+      "id": 613,
+      "name": "Kia EV6",
+      "mileage": "528 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Kia",
+      "price": "60.95 - 65.95 Lakh",
+      "image": ""
+    },
+    {
+      "id": 614,
+      "name": "Hyundai Ioniq 5",
+      "mileage": "631 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Hyundai",
+      "price": "45.95 Lakh",
+      "image": ""
+    },
+    {
+      "id": 615,
+      "name": "Audi e-tron",
+      "mileage": "484 Km/Charge",
+      "type": "SUV",
+      "fuel": "Electric",
+      "brand": "Audi",
+      "price": "1.02 - 1.25 Crore",
+      "image": ""
     }
   ]
+  
