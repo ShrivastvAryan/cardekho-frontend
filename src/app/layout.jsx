@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <>
     <html lang='en'>
-      <body className="bg-white-500 font-sans">
+      <body className="bg-white-500 font-sans overflow-x-hidden">
         <Providers>
           <Navbar/>
           {children}
