@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Link, Tabs,Tab,TabList,Grid,GridItem,Select,Button } from "@chakra-ui/react"
+import { Grid,GridItem } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
 import Image from 'next/image'
 
@@ -27,11 +27,11 @@ const electricCars=()=>{
 
     return(
         <>
-              <div className="my-5 p-2 bg-gray-100 w-11/12 h-auto mx-auto rounded-md">
-                 <Grid templateColumns="repeat(4, 1fr)" gap={5} className="p-2 my-2 ">
+              <div className="m-5 p-5 bg-gray-100 w-auto h-auto mx-auto rounded-md">
+                  <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={4} className="p-2 my-2">
                    {carList.map((list, index) => (
-                   <GridItem key={index}  w="90%" h="60" bg="gray.200" className="rounded-md cursor-pointer">
-                   <div className="p-2 w-full bg-red-500 h-3/5 relative">
+                    <GridItem key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200">
+                   <div className=" w-full h-3/5 relative">
                   <Image
                     src={list.image}
                     alt={list.name}

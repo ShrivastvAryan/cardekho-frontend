@@ -258,7 +258,7 @@
       "fuel": "Electric",
       "brand": "Tata",
       "price": "14.49 - 19.29 Lakh",
-      "image": ""
+      "image": "/b26.jpeg"
     },
     {
       "id": 602,
@@ -268,7 +268,7 @@
       "fuel": "Electric",
       "brand": "MG",
       "price": "18.98 - 25.20 Lakh",
-      "image": ""
+      "image": "/b27.jpeg"
     },
     {
       "id": 603,
@@ -278,7 +278,7 @@
       "fuel": "Electric",
       "brand": "Hyundai",
       "price": "23.84 - 24.03 Lakh",
-      "image": ""
+      "image": "/b28.jpeg"
     },
     {
       "id": 604,
@@ -288,17 +288,17 @@
       "fuel": "Electric",
       "brand": "Tata",
       "price": "7.99 - 11.89 Lakh",
-      "image": ""
+      "image": "/b29.jpeg"
     },
     {
       "id": 605,
-      "name": "Mahindra XUV400 EV",
+      "name": "Mahindra BE6 ",
       "mileage": "375 - 456 Km/Charge",
       "type": "SUV",
       "fuel": "Electric",
       "brand": "Mahindra",
       "price": "15.49 - 19.39 Lakh",
-      "image": ""
+      "image": "/b40.png"
     },
     {
       "id": 606,
@@ -308,7 +308,7 @@
       "fuel": "Electric",
       "brand": "BYD",
       "price": "33.99 Lakh",
-      "image": ""
+      "image": "/b30.jpeg"
     },
     {
       "id": 607,
@@ -318,7 +318,7 @@
       "fuel": "Electric",
       "brand": "Citroen",
       "price": "11.50 - 13.20 Lakh",
-      "image": ""
+      "image": "/b31.jpg"
     },
     {
       "id": 608,
@@ -328,7 +328,7 @@
       "fuel": "Electric",
       "brand": "Tata",
       "price": "10.99 - 15.49 Lakh",
-      "image": ""
+      "image": "/b32.jpg"
     },
     {
       "id": 609,
@@ -338,7 +338,7 @@
       "fuel": "Electric",
       "brand": "Volvo",
       "price": "57.90 Lakh",
-      "image": ""
+      "image": "/b33.jpeg"
     },
     {
       "id": 610,
@@ -348,7 +348,7 @@
       "fuel": "Electric",
       "brand": "BMW",
       "price": "72.50 Lakh",
-      "image": ""
+      "image": "/b34.jpeg"
     },
     {
       "id": 611,
@@ -358,7 +358,7 @@
       "fuel": "Electric",
       "brand": "Mercedes-Benz",
       "price": "77.50 Lakh",
-      "image": ""
+      "image": "/b35.jpeg"
     },
     {
       "id": 612,
@@ -368,7 +368,7 @@
       "fuel": "Electric",
       "brand": "BMW",
       "price": "66.90 Lakh",
-      "image": ""
+      "image": "/b36.jpeg"
     },
     {
       "id": 613,
@@ -378,7 +378,7 @@
       "fuel": "Electric",
       "brand": "Kia",
       "price": "60.95 - 65.95 Lakh",
-      "image": ""
+      "image": "/b37.jpeg"
     },
     {
       "id": 614,
@@ -388,7 +388,7 @@
       "fuel": "Electric",
       "brand": "Hyundai",
       "price": "45.95 Lakh",
-      "image": ""
+      "image": "/b38.jpeg"
     },
     {
       "id": 615,
@@ -398,7 +398,7 @@
       "fuel": "Electric",
       "brand": "Audi",
       "price": "1.02 - 1.25 Crore",
-      "image": ""
+      "image": "/b39.jpeg"
     }
   ]
   

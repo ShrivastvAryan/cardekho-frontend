@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link, Tabs,Tab,TabList,Grid,GridItem,Select,Button } from "@chakra-ui/react"
 
 const aboutUs=()=>{
     return(

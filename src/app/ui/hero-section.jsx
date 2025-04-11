@@ -1,6 +1,6 @@
  import React from "react";
  import Image from 'next/image'
- import { Link, Tabs,Tab,TabList,Grid,GridItem,Select,Button } from "@chakra-ui/react"
+ import { Select,Button } from "@chakra-ui/react"
  
  const HeroSection=()=>{
 
