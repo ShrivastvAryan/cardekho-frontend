@@ -42,10 +42,10 @@ const MidHero=()=>{
 
     return(
         <>
-         <div className="my-5 p-2 bg-gray-100 w-11/12 h-auto mx-auto rounded-md" >
+         <div className="my-5 p-2 bg-gray-100 max-w-screen-xl h-auto mx-auto rounded-md" >
               <div>
               <Tabs colorScheme="red">
-              <TabList className="font-semibold">
+              <TabList className=" font-semibold text-xs flex flex-wrap">
               {carTab.map((tab)=>(
                 <Tab key={tab.value} value={tab.value} onClick={()=>setSelectedType(tab.value)}>{tab.label}</Tab>
               ))}
@@ -55,15 +55,15 @@ const MidHero=()=>{
 
 
         <div>
-         <Grid templateColumns="repeat(4, 1fr)" gap={5} className="p-2 my-2">
+         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={5} className="p-2 my-2">
            {carList.map((list, index) => (
            <GridItem key={index} w="90%" h="60" bg="gray.200" className="rounded-md cursor-pointer">
-           <div className="p-2 w-full bg-red-500 h-3/5 relative">
+           <div className="p-2 w-full h-3/5 relative">
           <Image
             src={list.image}
             alt={list.name}
-            fill
-            className="object-cover rounded-md"
+            fill                    // makes image fill its parent container
+            className="object-cover "
            />
            </div>
 

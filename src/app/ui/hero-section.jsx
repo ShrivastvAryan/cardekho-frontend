@@ -16,7 +16,7 @@
     return(
         
         
-    <div className="flex h-96 relative max-w-full">
+    <div className="flex h-96 relative max-w-screen">
 
     <Image 
       src="https://cdn4.singleinterface.com/files/enterprise/coverphoto/76409/tata-17-04-24-10-55-58.jpg"

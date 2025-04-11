@@ -1,9 +1,9 @@
-"use client";
+'use client';
+import Link from 'next/link';
 
 import React from "react";
 import{Tabs,TabList,Tab, AvatarGroup,Avatar,TabPanels,TabPanel} from '@chakra-ui/react'
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 
 const Navbar=()=>{
 
