@@ -60,7 +60,7 @@ const Navbar=()=>{
        </Box>
        <div>
         <AvatarGroup>
-        <Avatar bg='red.500' className="cursor-pointer" size="sm" className="m-2"/>
+        <Avatar bg='red.500' className="cursor-pointer" size="sm"/>
         </AvatarGroup>
        </div>
         </Box>
