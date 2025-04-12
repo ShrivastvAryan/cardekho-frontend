@@ -8,8 +8,6 @@ import {
   Tabs,
   TabList,
   Tab,
-  Avatar,
-  AvatarGroup,
   Box
 } from '@chakra-ui/react'
 
@@ -46,7 +44,7 @@ const Navbar=()=>{
          display={{ base: 'none', md: 'flex' }}
          justifyContent="center"
          alignItems="center">
-        <Box>
+        <Box className="w-full bg-white shadow-md h-14 p-2">
         <Tabs index={getTabIndex()} variant='soft-rounded' colorScheme='red'>
         <TabList>
         <Tab as={Link} href="/">Home</Tab>
@@ -59,9 +57,6 @@ const Navbar=()=>{
 
        </Box>
        <div>
-        <AvatarGroup>
-        <Avatar bg='red.500' className="cursor-pointer" size="sm"/>
-        </AvatarGroup>
        </div>
         </Box>
 

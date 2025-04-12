@@ -11,7 +11,7 @@ const electricCars=()=>{
      useEffect(() => {
         const fetchCars = async () => {
           try {
-            const response = await fetch('/data/car.json'); // Replace with your API URL
+            const response = await fetch('/data/car.json'); 
             const data = await response.json();    
 
             const electricCars = data.filter(car => car.fuel==="Electric");

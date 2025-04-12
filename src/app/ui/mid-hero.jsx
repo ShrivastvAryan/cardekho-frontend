@@ -19,6 +19,17 @@ const MidHero=()=>{
     {label:'Luxury',value:'Luxury'}
   ]
 
+  const brandPhoto=[
+    {label:'Suzuki',img:"/cb1.jpg"},
+    {label:'Hyundai',img:"/cb2.jpg"},
+    {label:'Tata',img:"/cb3.jpg"},
+    {label:'Mahindra',img:"/cb4.webp"},
+    {label:'Volkswagen',img:"/cb5.jpg"},
+    {label:'Mercedes',img:"/cb6.jpeg"},
+    {label:'MG',img:"/cb7.jpg"},
+    {label:'SKoda',img:"/cb8.png"},
+  ]
+
   useEffect(() => {
     const fetchCars = async () => {
       try {
@@ -42,7 +53,31 @@ const MidHero=()=>{
 
     return(
         <>
+       <div className="m-5 p-2 bg-gray-100 w-auto h-auto rounded-md" >
+       <p className="font-semibold text-2xl p-2 pb-4">Find Car By Brand</p>
+
+       <div>
+         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={5} className="p-2 my-2">
+          {brandPhoto.map((photos,index)=>(
+             <GridItem key={index}  className="h-60 w-60 relative">
+            <Image
+              src={photos.img}
+              alt={photos.label}
+              fill                  // makes image fill its parent container
+              className="object-contain "
+             />
+             </GridItem>
+          ))}
+          
+           </Grid>
+        </div>
+
+        </div>
+
+
+        {/*Mid hero 2*/}
          <div className="m-5 p-2 bg-gray-100 w-auto h-auto rounded-md" >
+          <p className="font-semibold text-2xl p-2 pb-4">Find Car By Body</p>
               <div>
               <Tabs colorScheme="red">
               <TabList className=" font-semibold text-xs flex flex-wrap">

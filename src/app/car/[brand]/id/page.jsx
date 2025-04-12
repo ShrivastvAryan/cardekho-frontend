@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 const CarPage=()=>{
 
-    const { brand } = req.query
+    const { brand } = useParams()
     const [carData, setCarData] = useState(null);
 
     useEffect(() => {
