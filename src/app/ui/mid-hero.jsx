@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from 'next/image'
-import { Tabs,Tab,TabList,Grid,GridItem } from "@chakra-ui/react"
+import { Tabs,Tab,TabList,Grid,GridItem,Box } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
 
 
@@ -57,19 +57,19 @@ const MidHero=()=>{
        <p className="font-semibold text-2xl p-2 pb-4">Find Car By Brand</p>
 
        <div>
-         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={5} className="p-2 my-2">
+         <div className="flex flex-row flex-wrap">
           {brandPhoto.map((photos,index)=>(
-             <GridItem key={index}  className="h-60 w-60 relative">
+             <div key={index} className="h-30 w-30 relative">
             <Image
               src={photos.img}
               alt={photos.label}
               fill                  // makes image fill its parent container
               className="object-contain "
              />
-             </GridItem>
+             </div>
           ))}
           
-           </Grid>
+           </div>
         </div>
 
         </div>
@@ -80,7 +80,7 @@ const MidHero=()=>{
           <p className="font-semibold text-2xl p-2 pb-4">Find Car By Body</p>
               <div>
               <Tabs colorScheme="red">
-              <TabList className=" font-semibold text-xs flex flex-wrap">
+              <TabList className=" font-semibold text-xs flex flex-wrap gap-2 pt-1">
               {carTab.map((tab)=>(
                 <Tab key={tab.value} value={tab.value} onClick={()=>setSelectedType(tab.value)}>{tab.label}</Tab>
               ))}
@@ -90,17 +90,21 @@ const MidHero=()=>{
 
 
         <div>
-         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={5} className="p-2 my-2">
+         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={9} className="p-2 my-2">
            {carList.map((list, index) => (
-           <GridItem key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200">
-           <div className=" w-full h-3/5 relative">
+           <GridItem key={index}
+      bg="gray.100"
+      borderRadius="md"
+      overflow="hidden"
+      cursor="pointer"
+      h="auto">
+           <Box h="60%" position="relative">
           <Image
             src={list.image}
             alt={list.name}
-            fill                    // makes image fill its parent container
-            className="object-cover "
+            objectFit="cover" w="100%" h="100%"
            />
-           </div>
+           </Box>
 
            <div className="p-2 font-semibold text-xl">
            <p className="font-extrabold">{list.name}</p>

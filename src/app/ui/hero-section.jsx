@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
  const HeroSection=()=>{
     return(
         
-    <div className="flex h-96 relative max-w-screen">
+    <div className="flex h-40 relative max-w-screen md:h-64 lg:h-96">
     <Swiper
     modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={0}

@@ -1,17 +1,21 @@
 'use client'
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+import {   Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerFooter,
+  useDisclosure,
+  Button,
+  Box,
   IconButton,
   Tabs,
   TabList,
-  Tab,
-  Box
-} from '@chakra-ui/react'
+  Tab } from "@chakra-ui/react"
 
-import { HamburgerIcon } from '@chakra-ui/icons';
+
+import {HamburgerIcon} from '@chakra-ui/icons';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import Link from 'next/link';
@@ -20,6 +24,7 @@ import Link from 'next/link';
 const Navbar=()=>{
 
   const pathname = usePathname(); // Get current path
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Ensure pathname is defined before using it
   if (!pathname) return null;
@@ -41,10 +46,9 @@ const Navbar=()=>{
     return(
         <>
         <Box className="w-full bg-white shadow-md h-14 p-2 relative"
-         display={{ base: 'none', md: 'flex' }}
-         justifyContent="center"
-         alignItems="center">
-        <Box className="w-full bg-white shadow-md h-14 p-2">
+        display={{ base: 'none', md: 'flex' }}   justifyContent="center"
+        alignItems="center">
+        <Box >
         <Tabs index={getTabIndex()} variant='soft-rounded' colorScheme='red'>
         <TabList>
         <Tab as={Link} href="/">Home</Tab>
@@ -61,29 +65,34 @@ const Navbar=()=>{
         </Box>
 
 
-<Box display={{ base: 'block', md: 'none' }}>
-<Menu >
-<MenuButton
-  as={IconButton}
-  aria-label='Options'
+<Box display={{ base: 'block', md: 'none' }} className="w-full bg-white shadow-md h-14 p-2 relative">
+<IconButton
+  variant="outline"
+  size="sm"
   icon={<HamburgerIcon />}
-  variant='outline'
+  aria-label="Open Menu"
+  onClick={onOpen}
 />
-<MenuList className="font-semibold p-1 ml-2" colorScheme='red' >
-  <MenuItem as={Link} href="/"  >
-    Home
-  </MenuItem>
-  <MenuItem  as={Link} href="/discovercars" >
-    Discover Cars
-  </MenuItem>
-  <MenuItem as={Link} href="/electriccars" >
-    Electric cars
-  </MenuItem>
-  <MenuItem as={Link} href="/about" >
-    About Us
-  </MenuItem>
-</MenuList>
-</Menu>
+        <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerCloseButton />
+            <DrawerHeader>Navigation</DrawerHeader>
+            <DrawerBody>
+              <ul className="space-y-4 font-semibold">
+                <li><Link href="/" onClick={onClose}>Home</Link></li>
+                <li><Link href="/discovercars" onClick={onClose}>Discover Cars</Link></li>
+                <li><Link href="/electriccars" onClick={onClose}>Electric Cars</Link></li>
+                <li><Link href="/about" onClick={onClose}>About Us</Link></li>
+              </ul>
+            </DrawerBody>
+            <DrawerFooter>
+              <Button variant="outline" mr={3} onClick={onClose} colorScheme='red'>
+                Close
+              </Button>
+            </DrawerFooter>
+          </DrawerContent>
+        </Drawer>
 </Box>
         </>
     )
