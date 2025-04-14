@@ -24,17 +24,17 @@ import 'swiper/css/pagination';
   >
     <SwiperSlide><Image 
       src="/banner2.jpg"
-      alt=""
+      alt="Hyundai Creta"
       fill
       className="object-cover"/>  </SwiperSlide>
     <SwiperSlide><Image 
       src="/banner3.webp"
-      alt=""
+      alt="Nexon"
       fill
       className="object-cover"/>  </SwiperSlide>
     <SwiperSlide><Image 
       src="/banner4.webp"
-      alt=""
+      alt="Xuv 700"
       fill
       className="object-cover"/>  </SwiperSlide>
   </Swiper>    

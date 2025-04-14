@@ -5,7 +5,7 @@ import { Tabs,Tab,TabList,Grid,GridItem } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
 
 
-const discoverCars=()=>{
+const DiscoverCars=()=>{
      const [carList, setCarList] = useState([]); //for API
       const [selectedType, setSelectedType] = useState("All"); //for specific selection
     
@@ -81,4 +81,4 @@ const discoverCars=()=>{
     )
 }
 
-export default discoverCars
+export default DiscoverCars

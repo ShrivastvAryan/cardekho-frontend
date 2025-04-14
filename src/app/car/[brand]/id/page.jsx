@@ -1,9 +1,7 @@
 "use client"
 import React from 'react'
-import { Link, Tabs,Tab,TabList,Grid,GridItem,Select,Button } from "@chakra-ui/react"
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import Image from 'next/image'
 
 
 const CarPage=()=>{

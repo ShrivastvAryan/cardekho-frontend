@@ -4,7 +4,7 @@ import { Grid,GridItem } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
 import Image from 'next/image'
 
-const electricCars=()=>{
+const ElectricCars=()=>{
 
     const [carList, setCarList] = useState([]); //for API
 
@@ -53,4 +53,4 @@ const electricCars=()=>{
     )
 }
 
-export default electricCars
+export default ElectricCars
