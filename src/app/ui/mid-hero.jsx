@@ -92,19 +92,17 @@ const MidHero=()=>{
         <div>
          <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={9} className="p-2 my-2">
            {carList.map((list, index) => (
-           <GridItem key={index}
-      bg="gray.100"
-      borderRadius="md"
-      overflow="hidden"
-      cursor="pointer"
-      h="auto">
-           <Box h="60%" position="relative">
+           <GridItem
+           key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200">
+           <div className=" w-full h-3/5 relative">
           <Image
             src={list.image}
             alt={list.name}
-            objectFit="cover" w="100%" h="100%"
+          fill
+           className="object-cover rounded-md"
+
            />
-           </Box>
+           </div>
 
            <div className="p-2 font-semibold text-xl">
            <p className="font-extrabold">{list.name}</p>
