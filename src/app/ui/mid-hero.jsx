@@ -20,7 +20,7 @@ const MidHero=()=>{
   ]
 
   const brandPhoto=[
-    {label:'Suzuki',img:"/cb1.jpg"},
+    {label:'Maruti Suzuki',img:"/cb1.jpg"},
     {label:'Hyundai',img:"/cb2.jpg"},
     {label:'Tata',img:"/cb3.jpg"},
     {label:'Mahindra',img:"/cb4.webp"},
