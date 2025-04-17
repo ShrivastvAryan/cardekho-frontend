@@ -1,15 +1,16 @@
 import React from 'react'
-import { FaGithub,FaLinkedin,FaInstagram,FaXTwitter } from "react-icons/fa";
+import { FaGithub,FaLinkedin,FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Button } from '@chakra-ui/react';
 
 
 const contactUs=()=>{
 
     const Links=[
-        {label:'Github',link:'',image:<FaGithub/>},
-        {label:'LinkedIn',link:'',image:<FaLinkedin />},
-        {label:'Instagram',link:'',image:<FaInstagram/>},
-        {label:'Twitter',link:'',image:<FaXTwitter />}
+        {label:'Github',link:'https://github.com/ShrivastvAryan',image:<FaGithub/>},
+        {label:'LinkedIn',link:'https://www.linkedin.com/in/aryanshrivastava290605/',image:<FaLinkedin />},
+        {label:'Instagram',link:'https://www.instagram.com/aryanshrivastv_/',image:<FaInstagram/>},
+        {label:'Twitter',link:'https://x.com/ShrivastvAryan',image:<FaXTwitter />}
     ] 
 
     return(
@@ -55,7 +56,7 @@ const contactUs=()=>{
         <div className=" border-[1px] border-black p-2 m-2 rounded-md md:w-1/2 md:flex md:justify-center md:items-center">
             <div className='flex justify-evenly gap-2'>
             {Links.map((icon,index)=>(
-                <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28 text-2xl bg-red-100 flex align-center items-center '>{icon.image}</div>
+                <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28 text-2xl bg-red-100 flex align-center items-center '><a href={icon.link} target="_blank">{icon.image}</a></div>
             ))   
             }
             </div>
