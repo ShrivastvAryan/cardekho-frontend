@@ -56,7 +56,9 @@ const contactUs=()=>{
         <div className=" border-[1px] border-black p-2 m-2 rounded-md md:w-1/2 md:flex md:justify-center md:items-center">
             <div className='flex justify-evenly gap-2'>
             {Links.map((icon,index)=>(
-                <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28 text-2xl bg-red-100 flex align-center items-center '><a href={icon.link} target="_blank">{icon.image}</a></div>
+                <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28  bg-red-100 relative '>
+                    <div className=" text-4xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"><a href={icon.link} target="_blank">{icon.image}</a></div>
+                    </div>
             ))   
             }
             </div>

@@ -36,7 +36,7 @@ const Navbar=()=>{
         return 1;
       case "/electriccars":
         return 2;
-      case "/about":
+      case "/contact":
         return 3;
       default:
         return 0;
@@ -54,7 +54,7 @@ const Navbar=()=>{
         <Tab as={Link} href="/">Home</Tab>
         <Tab as={Link} href="/discovercars">Discover Cars</Tab>
         <Tab as={Link} href="/electriccars">Electric Cars</Tab>
-        <Tab as={Link} href="/about">About Us</Tab>
+        <Tab as={Link} href="/contact">Contact Us</Tab>
        </TabList>
     
        </Tabs>
@@ -83,7 +83,7 @@ const Navbar=()=>{
                 <li><Link href="/" onClick={onClose}>Home</Link></li>
                 <li><Link href="/discovercars" onClick={onClose}>Discover Cars</Link></li>
                 <li><Link href="/electriccars" onClick={onClose}>Electric Cars</Link></li>
-                <li><Link href="/about" onClick={onClose}>About Us</Link></li>
+                <li><Link href="/contact" onClick={onClose}>Contact Us</Link></li>
               </ul>
             </DrawerBody>
             <DrawerFooter>

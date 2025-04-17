@@ -57,14 +57,14 @@ const MidHero=()=>{
        <p className="font-semibold text-2xl p-2 pb-4">Find Car By Brand</p>
 
        <div>
-         <div className="flex flex-row flex-wrap">
+         <div className="flex flex-row gap-10 flex-wrap ">
           {brandPhoto.map((photos,index)=>(
-             <div key={index} className="h-30 w-30 relative">
+             <div key={index} className="h-44 w-44 relative p-4">
             <Image
               src={photos.img}
               alt={photos.label}
               fill                  // makes image fill its parent container
-              className="object-contain "
+              className="object-contain"
              />
              </div>
           ))}
