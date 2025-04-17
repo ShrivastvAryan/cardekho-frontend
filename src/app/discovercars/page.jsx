@@ -45,7 +45,7 @@ const DiscoverCars=()=>{
          <div className="my-5 p-2 bg-gray-100 w-11/12 h-auto mx-auto rounded-md" >
                       <div>
                       <Tabs colorScheme="red">
-                       <TabList className=" font-semibold text-xs flex flex-wrap">
+                       <TabList className=" font-semibold text-xs flex flex-wrap gap-2 pt-1">
                       {carTab.map((tab)=>(
                         <Tab key={tab.value} value={tab.value} onClick={()=>setSelectedType(tab.value)}>{tab.label}</Tab>
                       ))}

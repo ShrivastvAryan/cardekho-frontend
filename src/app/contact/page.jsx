@@ -1,15 +1,15 @@
 import React from 'react'
-import { Github,Linkedin,Instagram,Twitter } from 'lucide-react';
+import { FaGithub,FaLinkedin,FaInstagram,FaXTwitter } from "react-icons/fa";
 import { Button } from '@chakra-ui/react';
 
 
-const aboutUs=()=>{
+const contactUs=()=>{
 
     const Links=[
-        {label:'Github',link:'',image:<Github/>},
-        {label:'LinkedIn',link:'',image:<Linkedin />},
-        {label:'Instagram',link:'',image:<Instagram/>},
-        {label:'Twitter',link:'',image:<Twitter/>}
+        {label:'Github',link:'',image:<FaGithub/>},
+        {label:'LinkedIn',link:'',image:<FaLinkedin />},
+        {label:'Instagram',link:'',image:<FaInstagram/>},
+        {label:'Twitter',link:'',image:<FaXTwitter />}
     ] 
 
     return(
@@ -55,7 +55,7 @@ const aboutUs=()=>{
         <div className=" border-[1px] border-black p-2 m-2 rounded-md md:w-1/2 md:flex md:justify-center md:items-center">
             <div className='flex justify-evenly gap-2'>
             {Links.map((icon,index)=>(
-                <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28 text-2xl bg-red-100 '>{icon.image}</div>
+                <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28 text-2xl bg-red-100 flex align-center items-center '>{icon.image}</div>
             ))   
             }
             </div>
@@ -69,4 +69,4 @@ const aboutUs=()=>{
     )
 }
 
-export default aboutUs;
+export default contactUs;
