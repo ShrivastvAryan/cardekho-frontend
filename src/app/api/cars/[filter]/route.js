@@ -1,0 +1,50 @@
+    const cars = [
+      {
+        id: 101,
+        name: "Tata Harrier",
+        mileage: "14-16 Kmpl",
+        type: "SUV",
+        fuel: "Diesel",
+        brand: "Tata",
+        image: "/b1.webp",
+        price: "₹15.49 - ₹26.44 Lakh"
+      },
+      {
+        id: 102,
+        name: "Mahindra XUV700",
+        mileage: "12-16 Kmpl",
+        type: "MUV",
+        fuel: "Petrol/Diesel",
+        brand: "Mahindra",
+        image: "/b2.webp",
+        price: "₹14.03 - ₹26.57 Lakh"
+      },
+     
+    ];
+  
+    export async function GET(request, { params }) {
+      const { filter } = params;
+      const searchParams = new URL(request.url).searchParams;
+      const type = searchParams.get('type');
+    
+      const isNumeric = !isNaN(filter);
+    
+      if (isNumeric) {
+        // Filter by ID
+        const car = cars.find(car => car.id === parseInt(filter));
+        if (!car) {
+          return new Response(JSON.stringify({ message: "Car not found" }), { status: 404 });
+        }
+        return Response.json(car);
+      } else {
+        // Filter by brand (case-insensitive)
+        const brandCars = cars.filter(car => car.brand.toLowerCase() === filter.toLowerCase());
+    
+        if (type) {
+          const filtered = brandCars.filter(car => car.type.toLowerCase() === type.toLowerCase());
+          return Response.json(filtered);
+        }
+    
+        return Response.json(brandCars);
+      }
+    }

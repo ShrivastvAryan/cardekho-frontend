@@ -33,7 +33,7 @@ const MidHero=()=>{
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await fetch('/data/car.json'); // Replace with your API URL
+        const response = await fetch('/api/cars'); // Replace with your API URL
         const data = await response.json();
 
         const filteredCars =
@@ -57,12 +57,12 @@ const MidHero=()=>{
        <p className="font-semibold text-2xl p-2 pb-4">Find Car By Brand</p>
 
        <div>
-         <div className="flex flex-row gap-10 flex-wrap ">
+         <div className="flex flex-row gap-5 flex-wrap items-center justify-evenly">
           {brandPhoto.map((photos,index)=>(
-             <div key={index} className="h-44 w-44 relative p-4">
+             <div key={index} className="h-12 w-12 md:h-40 md:w-40  relative pl-4">
             <Image
               src={photos.img}
-              alt={photos.label}
+              alt={photos.label} 
               fill                  // makes image fill its parent container
               className="object-contain"
              />

@@ -1,10 +1,46 @@
+'use client'
 import React from 'react'
 import { FaGithub,FaLinkedin,FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Button } from '@chakra-ui/react';
+import { useState,useEffect } from 'react';
+
+const defaultContactForm={
+    username:"",
+    email:"",
+    message:"",
+  };
 
 
 const contactUs=()=>{
+
+    const[contact,setContact]=useState(defaultContactForm);
+    const[userData,setUserData]=useState(true);
+
+    useEffect(() => {
+        if (userData ) {
+          setContact({
+            username: userData.username,
+            email: userData.email,
+            message: "",
+          });
+          setUserData(false); // Prevents repeated setting
+        }
+      }, [userData]); 
+
+      const handleInput=(e)=>{
+        const name =e.target.name;
+        const value=e.target.value;
+      
+        setContact({
+          ...contact, //prev data
+          [name]:value,
+         })
+      
+      };
+
+      const handleSubmit=async(e)=>{
+        e.preventDefault(); // handle for form submission infos
 
     const Links=[
         {label:'Github',link:'https://github.com/ShrivastvAryan',image:<FaGithub/>},
@@ -21,17 +57,21 @@ const contactUs=()=>{
 
         <div className='md:flex '>
         <div className="border-[1px] border-black p-2 m-2 rounded-md md:w-1/2">
-            <form>
+            <form onSubmit={handleSubmit}>
             <div className="flex justify-between mt-4">
             <label htmlFor='username'>Username:</label>
              <input type='text' name="username" id="username" 
-        autoComplete="off" required className='bg-red-100 pl-2 rounded-lg w-full ml-2 '/>
+        autoComplete="off" required className='bg-red-100 pl-2 rounded-lg w-full ml-2 '
+        value={contact.username}
+        onChange={handleInput}/>
             </div>
         
             <div className="flex justify-between   mt-4">
             <label htmlFor='email'>Email:</label>
             <input type='text' name="email" id="email" 
-            autoComplete="off" required className='bg-red-100 pl-2  mt-2 rounded-lg w-full ml-8'/>
+            autoComplete="off" required className='bg-red-100 pl-2  mt-2 rounded-lg w-full ml-8'
+            value={contact.email}
+            onChange={handleInput}/>
             </div>
 
             <div className="flex justify-between w-full  mt-4">
@@ -42,6 +82,8 @@ const contactUs=()=>{
             cols="25"
             rows='4'
             className='bg-red-100 pl-2  mt-2 rounded-lg w-full ml-2'
+            value={contact.message}
+            onChange={handleInput}
             />
             </div>
 
@@ -70,6 +112,6 @@ const contactUs=()=>{
        
         </>
     )
-}
+}}
 
 export default contactUs;
