@@ -22,21 +22,21 @@ import 'swiper/css/pagination';
         pagination={{ clickable: true }}
         className='w-full'
   >
-    <SwiperSlide><Image 
+    <SwiperSlide className="w-screen aspect-video"><Image 
       src="/banner2.jpg"
       alt="Hyundai Creta"
       fill
-      className="object-cover"/>  </SwiperSlide>
-    <SwiperSlide><Image 
+      className="object-contain"/>  </SwiperSlide>
+    <SwiperSlide className="w-screen aspect-video"><Image 
       src="/banner3.webp"
       alt="Nexon"
       fill
-      className="object-cover"/>  </SwiperSlide>
-    <SwiperSlide><Image 
+      className="object-contain"/>  </SwiperSlide>
+    <SwiperSlide className="w-screen aspect-video"><Image 
       src="/banner4.webp"
       alt="Xuv 700"
       fill
-      className="object-cover"/>  </SwiperSlide>
+      className="object-contain"/>  </SwiperSlide>
   </Swiper>    
 
      {/* <div className="w-72 h-36 bg-gray-200 ml-5 mr-3 rounded-md my-5 p-2 z-10">

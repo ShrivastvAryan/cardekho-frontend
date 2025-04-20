@@ -1,29 +1,38 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Divide } from 'lucide-react';
+import { Box, Divider } from '@chakra-ui/react'
 
 export default function CarListClient({ cars = [], error }) {
   const [carList, setCarList] = useState(cars);
 
   if (error) {
-    return <p className="text-red-500">Error: {error}</p>;
+    return <p className="text-red-500 relative">Error: {error}</p>;
   }
 
   return (
     <div>
-      {carList.map((car) => (
+      {carList.map((car)=>(
         <div key={car.id}>
-          <div className='relative h-40 w-screen'>
-            <Image src={car.image} alt={car.name} fill className='object-contain' />
+          <div className='relative w-screen h-48 md:h-64 lg:h-[60vh] mt-2'>
+          <Image src={car.image} alt={car.name} fill className='object-contain '/>
           </div>
-          <h2 className='block text-center text-2xl font-semibold'>{car.name}</h2>
-          <p><strong>Price:</strong> {car.price}</p>
-          <p><strong>Fuel:</strong> {car.fuel}</p>
-          <p><strong>Mileage:</strong> {car.mileage}</p>
-          <p><strong>Type:</strong> {car.type}</p>
-          <p><strong>Brand:</strong> {car.brand}</p>
+
+          <Box  className='block text-center italic bg-red-600 text-white text-3xl font-semibold mt-4 p-1 lg:text-4xl'>{car.name}</Box>
+          <div className=' flex flex-col font-semibold pl-4 pt-6 text-xl gap-2 italic lg:text-2xl '>
+          <div >Price: {car.price}</div>
+          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <div>Fuel: {car.fuel}</div>
+          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <div>Mileage: {car.mileage}</div>
+          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <div>Type: {car.type}</div>
+          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <div>Brand: {car.brand}</div>
+          </div>
+
         </div>
       ))}
     </div>
-  );
+
+  )};
