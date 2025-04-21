@@ -6,7 +6,7 @@ import{useState,useEffect} from "react";
 import Link from "next/link";
 
 
-const MidHero=({filter,type})=>{
+const MidHero=()=>{
 
   const [carList, setCarList] = useState([]); //for API
   const [selectedType, setSelectedType] = useState("All"); //for specific selection
@@ -37,7 +37,7 @@ const MidHero=({filter,type})=>{
         const response = await fetch('/data/car.json'); // Replace with your API URL
         const data = await response.json();
 
-        const filteredCars =s
+        const filteredCars=
         selectedType === "All"
           ? data.slice(0,8)
           : data.filter(car => car.type === selectedType);
@@ -50,7 +50,7 @@ const MidHero=({filter,type})=>{
     };
 
     fetchCars();
-  }, [filter, type, selectedType]);
+  }, [selectedType]);
 
     return(
         <>

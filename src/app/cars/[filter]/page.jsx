@@ -5,7 +5,7 @@ export default async function Page({ params, searchParams }) {
   const { type } = searchParams;
 
   try {
-    const res = await fetch(`http://localhost:3000/api/cars/${filter}?type=${type || ''}`, {
+    const res = await fetch(`/api/cars/${filter}?type=${type || ''}`, {
       cache: 'no-store', // ensures fresh data on every request (like getServerSideProps)
     });
 
