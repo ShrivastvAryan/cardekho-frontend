@@ -34,10 +34,10 @@ const MidHero=({filter,type})=>{
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/cars/${filter}`); // Replace with your API URL
+        const response = await fetch('/data/car.json'); // Replace with your API URL
         const data = await response.json();
 
-        const filteredCars =
+        const filteredCars =s
         selectedType === "All"
           ? data.slice(0,8)
           : data.filter(car => car.type === selectedType);
