@@ -21,13 +21,13 @@ export default function CarListClient({ cars = [], error }) {
           <Box  className='block text-center italic bg-red-600 text-white text-3xl font-semibold mt-4 p-1 lg:text-4xl'>{car.name}</Box>
           <div className=' flex flex-col font-semibold pl-4 pt-6 text-xl gap-2 italic lg:text-2xl '>
           <div >Price: {car.price}</div>
-          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <Divider orientation='horizontal' colorScheme='red' className='border-red-500 border-2' />
           <div>Fuel: {car.fuel}</div>
-          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <Divider orientation='horizontal'  colorScheme='red'/>
           <div>Mileage: {car.mileage}</div>
-          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <Divider orientation='horizontal'  colorScheme='red'/>
           <div>Type: {car.type}</div>
-          <Divider orientation='horizontal' className='border-red-2' size='2'/>
+          <Divider orientation='horizontal'  colorScheme='red'/>
           <div>Brand: {car.brand}</div>
           </div>
 

@@ -6,7 +6,7 @@
         type: "SUV",
         fuel: "Petrol/Diesel",
         brand: "Hyundai",
-        image: "/cars/creta.webp",
+        image: "/b3.jpg",
         price: "₹10.87 - ₹19.20 Lakh"
       },
       {
@@ -16,7 +16,7 @@
         type: "MUV",
         fuel: "Petrol/Diesel",
         brand: "Mahindra",
-        image: "/cars/xuv700.webp",
+        image: "/b2.webp",
         price: "₹14.03 - ₹26.57 Lakh"
       },
       {
@@ -26,7 +26,7 @@
         type: "Coupe SUV",
         fuel: "Petrol/Electric",
         brand: "Tata",
-        image: "/cars/curvv.webp",
+        image: "/b6.jpeg",
         price: "₹15.00 - ₹20.00 Lakh"
       },
       {
@@ -36,7 +36,7 @@
         type: "SUV",
         fuel: "Petrol/Diesel",
         brand: "Kia",
-        image: "/cars/seltos.webp",
+        image: "/b4.jpeg",
         price: "₹10.90 - ₹20.30 Lakh"
       },
       {
@@ -46,7 +46,7 @@
         type: "SUV",
         fuel: "Petrol/Diesel",
         brand: "Toyota",
-        image: "/cars/fortuner.webp",
+        image: "/b5.webp",
         price: "₹32.99 - ₹50.34 Lakh"
       },
       {
@@ -56,7 +56,7 @@
         type: "Hatchback",
         fuel: "Petrol/Diesel/CNG",
         brand: "Tata",
-        image: "/cars/altroz.webp",
+        image: "/b7.jpeg",
         price: "₹6.35 - ₹10.25 Lakh"
       },
       {
@@ -66,7 +66,7 @@
         type: "Hatchback",
         fuel: "Petrol/Diesel",
         brand: "Hyundai",
-        image: "/cars/i20.webp",
+        image: "/b8.webp",
         price: "₹7.19 - ₹11.83 Lakh"
       },
       {
@@ -76,7 +76,7 @@
         type: "Sedan",
         fuel: "Petrol/Hybrid",
         brand: "Honda",
-        image: "/cars/city.webp",
+        image: "/b15.webp",
         price: "₹11.82 - ₹16.34 Lakh"
       },
       {
@@ -86,7 +86,7 @@
         type: "Sedan",
         fuel: "Petrol/Diesel",
         brand: "Hyundai",
-        image: "/cars/verna.webp",
+        image: "/b16.jpeg",
         price: "₹10.96 - ₹17.38 Lakh"
       },
       {
@@ -96,7 +96,7 @@
         type: "SUV",
         fuel: "Diesel",
         brand: "Tata",
-        image: "/cars/harrier.webp",
+        image: "/b1.webp",
         price: "₹15.49 - ₹26.44 Lakh"
       },
       {
@@ -106,7 +106,7 @@
         type: "SUV",
         fuel: "Petrol/Diesel",
         brand: "Hyundai",
-        image: "/cars/alcazar.webp",
+        image: "/b18.jpeg",
         price: "₹16.77 - ₹21.22 Lakh"
       },
       {
@@ -116,7 +116,7 @@
         type: "SUV",
         fuel: "Diesel",
         brand: "Mahindra",
-        image: "/cars/scorpio.webp",
+        image: "/b19.webp",
         price: "₹13.60 - ₹24.54 Lakh"
       },
       {
@@ -126,7 +126,7 @@
         type: "MPV",
         fuel: "Petrol/Diesel/Hybrid",
         brand: "Toyota",
-        image: "/cars/innova.webp",
+        image: "/b20.jpeg",
         price: "₹19.13 - ₹29.02 Lakh"
       },
       {
@@ -136,7 +136,7 @@
         type: "Luxury Sedan",
         fuel: "Electric",
         brand: "Mercedes-Benz",
-        image: "/cars/eqs.webp",
+        image: "/b21.jpeg",
         price: "₹1.55 - ₹2.45 Crore"
       },
       {
@@ -146,7 +146,7 @@
         type: "Sports Sedan",
         fuel: "Petrol",
         brand: "BMW",
-        image: "/cars/m3.webp",
+        image: "/b22.webp",
         price: "₹1.52 - ₹1.55 Crore"
       },
       {
@@ -156,7 +156,7 @@
         type: "Luxury Sedan",
         fuel: "Petrol",
         brand: "Audi",
-        image: "/cars/a4.webp",
+        image: "/b23.jpeg",
         price: "₹43.85 - ₹51.85 Lakh"
       },
       {
@@ -166,7 +166,7 @@
         type: "Luxury Sedan",
         fuel: "Petrol/Diesel",
         brand: "Jaguar",
-        image: "/cars/xf.webp",
+        image: "/b24.jpeg",
         price: "₹71.60 - ₹76.00 Lakh"
       },
       {
@@ -176,7 +176,7 @@
         type: "Sports Car",
         fuel: "Petrol",
         brand: "Lotus",
-        image: "/cars/emira.webp",
+        image: "/b25.webp",
         price: "₹2.35 Crore"
       },
       {
@@ -186,7 +186,7 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "Tata",
-        image: "/cars/nexon-ev.webp",
+        image: "/b26.jpeg",
         price: "₹14.74 - ₹19.94 Lakh"
       },
       {
@@ -196,7 +196,7 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "MG",
-        image: "/cars/zs-ev.webp",
+        image: "/b27.jpeg",
         price: "₹21.99 - ₹25.88 Lakh"
       },
       {
@@ -206,7 +206,7 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "Hyundai",
-        image: "/cars/kona-ev.webp",
+        image: "/b28.jpeg",
         price: "₹23.84 - ₹24.03 Lakh"
       },
       {
@@ -216,7 +216,7 @@
         type: "Electric Hatchback",
         fuel: "Electric",
         brand: "Tata",
-        image: "/cars/tiago-ev.webp",
+        image: "/b29.jpeg",
         price: "₹8.69 - ₹11.99 Lakh"
       },
       {
@@ -226,7 +226,7 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "BYD",
-        image: "/cars/atto-3.webp",
+        image: "/b30.jpeg",
         price: "₹33.99 - ₹34.49 Lakh"
       },
       {
@@ -236,7 +236,7 @@
         type: "Electric Hatchback",
         fuel: "Electric",
         brand: "Citroen",
-        image: "/cars/ec3.webp",
+        image: "/b31.jpg",
         price: "₹11.50 - ₹12.43 Lakh"
       },
       {
@@ -246,7 +246,7 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "Tata",
-        image: "/cars/punch-ev.webp",
+        image: "/b32.jpg",
         price: "₹10.99 - ₹15.49 Lakh"
       },
       {
@@ -256,7 +256,7 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "Volvo",
-        image: "/cars/xc40.webp",
+        image: "/b33.jpeg",
         price: "₹56.90 Lakh"
       },
       {
@@ -266,17 +266,17 @@
         type: "Electric Sedan",
         fuel: "Electric",
         brand: "BMW",
-        image: "/cars/i4.webp",
+        image: "/b34.jpeg",
         price: "₹69.90 - ₹72.50 Lakh"
       },
       {
         id: 128,
-        name: "Mercedes-Benz GLA",
+        name: "BMW X7",
         mileage: "13-17 Kmpl",
         type: "Luxury SUV",
         fuel: "Petrol/Diesel",
-        brand: "Mercedes-Benz",
-        image: "/cars/gla.webp",
+        brand: "BMW",
+        image: "/b36.jpeg",
         price: "₹48.50 - ₹52.70 Lakh"
       },
       {
@@ -286,7 +286,7 @@
         type: "Electric Sedan",
         fuel: "Electric",
         brand: "BMW",
-        image: "/cars/i5.webp",
+        image: "/b34.jpeg",
         price: "₹1.20 - ₹1.50 Crore"
       },
       {
@@ -296,7 +296,7 @@
         type: "Electric Crossover",
         fuel: "Electric",
         brand: "Kia",
-        image: "/cars/ev6.webp",
+        image: "/b37.jpeg",
         price: "₹60.95 - ₹65.95 Lakh"
       },
       {
@@ -306,17 +306,17 @@
         type: "Electric SUV",
         fuel: "Electric",
         brand: "Hyundai",
-        image: "/cars/ioniq5.webp",
+        image: "/b38.jpeg",
         price: "₹44.95 - ₹45.95 Lakh"
       },
       {
         id: 132,
-        name: "BYD e6",
+        name: "Mahindra BE6",
         mileage: "415 km range",
         type: "Electric MPV",
         fuel: "Electric",
-        brand: "BYD",
-        image: "/cars/e6.webp",
+        brand: "Mahindra",
+        image: "/b40.png",
         price: "₹29.15 Lakh"
       }
      

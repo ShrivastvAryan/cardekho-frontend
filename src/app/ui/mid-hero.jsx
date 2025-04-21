@@ -3,9 +3,10 @@ import React from "react";
 import Image from 'next/image'
 import { Tabs,Tab,TabList,Grid,GridItem,Box } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
+import Link from "next/link";
 
 
-const MidHero=()=>{
+const MidHero=({filter,type})=>{
 
   const [carList, setCarList] = useState([]); //for API
   const [selectedType, setSelectedType] = useState("All"); //for specific selection
@@ -33,7 +34,7 @@ const MidHero=()=>{
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await fetch('/api/cars'); // Replace with your API URL
+        const response = await fetch(`http://localhost:3000/api/cars/${filter}`); // Replace with your API URL
         const data = await response.json();
 
         const filteredCars =
@@ -49,7 +50,7 @@ const MidHero=()=>{
     };
 
     fetchCars();
-  }, [selectedType]);
+  }, [filter, type, selectedType]);
 
     return(
         <>
@@ -95,6 +96,7 @@ const MidHero=()=>{
            <GridItem
            key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200">
            <div className=" w-full h-3/5 relative">
+           <Link href={`/cars/${list.id}`}>
           <Image
             src={list.image}
             alt={list.name}
@@ -102,6 +104,7 @@ const MidHero=()=>{
            className="object-cover rounded-md"
 
            />
+           </Link>
            </div>
 
            <div className="p-2 font-semibold text-xl">
