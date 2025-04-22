@@ -29,6 +29,7 @@ export default function CarListClient({ cars = [], error }) {
           <div>Type: {car.type}</div>
           <Divider orientation='horizontal'  colorScheme='red'/>
           <div>Brand: {car.brand}</div>
+          <Divider orientation='horizontal'  colorScheme='red'/>
           </div>
 
         </div>

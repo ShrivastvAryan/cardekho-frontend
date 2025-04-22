@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from 'next/image'
-import { Tabs,Tab,TabList,Grid,GridItem,Box } from "@chakra-ui/react"
+import { Tabs,Tab,TabList,Grid,GridItem } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
 import Link from "next/link";
 
@@ -21,14 +21,14 @@ const MidHero=()=>{
   ]
 
   const brandPhoto=[
-    {label:'Maruti Suzuki',img:"/cb1.jpg"},
-    {label:'Hyundai',img:"/cb2.jpg"},
-    {label:'Tata',img:"/cb3.jpg"},
-    {label:'Mahindra',img:"/cb4.webp"},
-    {label:'Volkswagen',img:"/cb5.jpg"},
-    {label:'Mercedes',img:"/cb6.jpeg"},
-    {label:'MG',img:"/cb7.jpg"},
-    {label:'SKoda',img:"/cb8.png"},
+    {label:'Maruti Suzuki',img:"/cb1.jpg",brand:"Maruti"},
+    {label:'Hyundai',img:"/cb2.jpg", brand:"Hyundai"},
+    {label:'Tata Motors',img:"/cb3.jpg",brand:"Tata"},
+    {label:'Mahindra',img:"/cb4.webp",brand:"Mahindra"},
+    {label:'Volkswagen',img:"/cb5.jpg",brand:"Volkswagen"},
+    {label:'Mercedes',img:"/cb6.jpeg",brand:"Mercedes"},
+    {label:'Morris Garages',img:"/cb7.jpg",brand:"MG"},
+    {label:'Skoda',img:"/cb8.png",brand:"Skoda"},
   ]
 
   useEffect(() => {
@@ -54,25 +54,29 @@ const MidHero=()=>{
 
     return(
         <>
-       <div className="m-5 p-2 bg-gray-100 w-auto h-auto rounded-md" >
-       <p className="font-semibold text-2xl p-2 pb-4">Find Car By Brand</p>
-
-       <div>
-         <div className="flex flex-row gap-5 flex-wrap items-center justify-evenly">
+        
+       <div className="m-5 p-2  w-auto h-auto rounded-md" >
+       
+       <p className="font-semibold text-xl md:text-2xl lg:text-4xl p-2 pb-10 block text-center">Find Car By Brand</p>
+         <div className="flex flex-row gap-6 flex-wrap items-center pb-6">
           {brandPhoto.map((photos,index)=>(
-             <div key={index} className="h-12 w-12 md:h-40 md:w-40  relative pl-4">
+            <div key={index} className="h-36 w-36
+              md:h-60 md:w-60  shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1  mx-auto">
+            <div className="relative w-full h-[80%] cursor-pointer">
+            <Link href={`/cars/${photos.brand}`}>
             <Image
               src={photos.img}
               alt={photos.label} 
               fill                  // makes image fill its parent container
               className="object-contain"
              />
+             </Link>
              </div>
+             <div className="h-[20%] font-bold text-center md:text-2xl p-2 bg-gray-200 flex items-center justify-center">{photos.label}</div>
+             </div>
+    
           ))}
-          
-           </div>
-        </div>
-
+          </div>
         </div>
 
 
@@ -91,11 +95,11 @@ const MidHero=()=>{
 
 
         <div>
-         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={9} className="p-2 my-2">
+         <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={9} className="p-2 my-2 ">
            {carList.map((list, index) => (
            <GridItem
-           key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200">
-           <div className=" w-full h-3/5 relative">
+           key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200  shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ">
+           <div className=" w-full h-3/5 relative ">
            <Link href={`/cars/${list.id}`}>
           <Image
             src={list.image}

@@ -99,7 +99,7 @@ const ContactUs=()=>{
             <div className='flex justify-evenly gap-2'>
             {Links.map((icon,index)=>(
                 <div key={index} className='rounded-full w-16 h-16 lg:w-28 lg:h-28  bg-red-100 relative '>
-                    <div className=" text-4xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"><a href={icon.link} target="_blank">{icon.image}</a></div>
+                    <div className=" text-4xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 "><a href={icon.link} target="_blank">{icon.image}</a></div>
                     </div>
             ))   
             }
