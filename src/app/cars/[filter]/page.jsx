@@ -5,7 +5,7 @@ export default async function Page({ params, searchParams }) {
   const { type } = searchParams;
 
   try {
-    const res = await fetch(`carsearch-beryl.vercel.app/api/cars/${filter}?type=${type || ''}`, {
+    const res = await fetch(`https://carsearch-beryl.vercel.app/api/cars/${filter}?type=${type || ''}`, {
       cache: 'no-store', 
     });
 
