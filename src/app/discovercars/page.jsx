@@ -3,6 +3,7 @@ import React from "react";
 import Image from 'next/image'
 import { Tabs,Tab,TabList,Grid,GridItem } from "@chakra-ui/react"
 import{useState,useEffect} from "react";
+import Link from "next/link";
 
 
 const DiscoverCars=()=>{
@@ -59,12 +60,14 @@ const DiscoverCars=()=>{
                    {carList.map((list, index) => (
                   <GridItem key={index}  className="rounded-md cursor-pointer md:w-72 w-full h-64 bg-slate-200">
                   <div className=" w-full h-3/5 relative">
+                  <Link href={`/cars/${list.id}`}>
                   <Image
                     src={list.image}
                     alt={list.name}
                     fill
                     className="object-cover"
                    />
+                   </Link>
                    </div>
         
                    <div className="p-2 font-semibold text-xl">

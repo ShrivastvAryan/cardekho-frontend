@@ -5,16 +5,16 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Button } from '@chakra-ui/react';
 import { useState,useEffect } from 'react';
 
-const defaultContactForm={
+const DefaultContactForm={
     username:"",
     email:"",
     message:"",
   };
 
 
-const contactUs=()=>{
+const ContactUs=()=>{
 
-    const[contact,setContact]=useState(defaultContactForm);
+    const[contact,setContact]=useState(DefaultContactForm);
     const[userData,setUserData]=useState(true);
 
     useEffect(() => {
@@ -114,4 +114,4 @@ const contactUs=()=>{
     )
 }}
 
-export default contactUs;
+export default ContactUs;
