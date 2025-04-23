@@ -56,9 +56,7 @@ const Navbar=()=>{
         <Tab as={Link} href="/electriccars">Electric Cars</Tab>
         <Tab as={Link} href="/contact">Contact Us</Tab>
        </TabList>
-    
        </Tabs>
-
        </Box>
        <div>
        </div>
