@@ -67,7 +67,7 @@ const MidHero=()=>{
             <Image
               src={photos.img}
               alt={photos.label} 
-              fill                  // makes image fill its parent container
+              fill                  
               className="object-contain"
              />
              </Link>
