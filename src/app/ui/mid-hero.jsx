@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import Image from 'next/image'
-import { Tabs,Tab,TabList,Grid,GridItem } from "@chakra-ui/react"
+import Image from 'next/image';
+import { Tabs,Tab,TabList,Grid,GridItem } from "@chakra-ui/react";
 import{useState,useEffect} from "react";
 import Link from "next/link";
 
@@ -54,14 +54,14 @@ const MidHero=()=>{
 
     return(
         <>
-        
-       <div className="m-5 p-2  w-auto h-auto rounded-md" >
-       
-       <p className="font-semibold text-xl md:text-2xl lg:text-4xl p-2 pb-10 block text-center">Find Car By Brand</p>
-         <div className="flex flex-row gap-6 flex-wrap items-center pb-6">
+        <p className="font-semibold text-xl md:text-2xl lg:text-4xl p-2 pb-10 block text-center mt-10">Find  A Car By Brand</p>
+       <div className=" w-screen h-auto rounded-md flex items-center justify-center" >
+      
+       <div className=" w-[80vw] h-auto bg-red-500">
+         <div className="flex flex-row  gap-6 lg:gap-10 flex-wrap pb-6">
           {brandPhoto.map((photos,index)=>(
             <div key={index} className="h-36 w-36
-              md:h-60 md:w-60  shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1  mx-auto">
+              md:h-60 md:w-60  shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ">
             <div className="relative w-full h-[80%] cursor-pointer">
             <Link href={`/cars/${photos.brand}`}>
             <Image
@@ -74,8 +74,9 @@ const MidHero=()=>{
              </div>
              <div className="h-[20%] font-bold text-center md:text-2xl p-2 bg-gray-200 flex items-center justify-center">{photos.label}</div>
              </div>
-    
+         
           ))}
+          </div>
           </div>
         </div>
 
