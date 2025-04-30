@@ -57,7 +57,7 @@ const MidHero=()=>{
         <p className="font-semibold text-xl md:text-2xl lg:text-4xl p-2 pb-10 block text-center mt-10">Find  A Car By Brand</p>
        <div className=" w-screen h-auto rounded-md flex items-center justify-center" >
       
-       <div className=" w-[80vw] h-auto bg-red-500">
+       <div className=" w-[80vw] h-auto">
          <div className="flex flex-row  gap-6 lg:gap-10 flex-wrap pb-6">
           {brandPhoto.map((photos,index)=>(
             <div key={index} className="h-36 w-36
