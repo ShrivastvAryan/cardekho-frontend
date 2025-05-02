@@ -55,10 +55,9 @@ const MidHero=()=>{
     return(
         <>
         <p className="font-semibold text-xl md:text-2xl lg:text-4xl p-2 pb-10 block text-center mt-10">Find  A Car By Brand</p>
-       <div className=" w-screen h-auto rounded-md flex items-center justify-center" >
+       <div className=" w-[95vw] h-auto rounded-md  mx-auto" >
       
-       <div className=" w-[80vw] h-auto">
-         <div className="flex flex-row  gap-6 lg:gap-10 flex-wrap pb-6">
+         <div className=" flex flex-row gap-6 lg:gap-10 flex-wrap justify-center pb-6">
           {brandPhoto.map((photos,index)=>(
             <div key={index} className="h-36 w-36
               md:h-60 md:w-60  shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ">
@@ -78,7 +77,6 @@ const MidHero=()=>{
           ))}
           </div>
           </div>
-        </div>
 
 
         {/*Mid hero 2*/}
