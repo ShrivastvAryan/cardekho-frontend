@@ -336,7 +336,17 @@
     "type": "MUV",
     "fuel": "Diesel",
     "brand": "Tata",
-    "image": "/b43.jepg",
+    "image": "/b43.jpeg",
     "price": "₹19.99- 29 Lakh"
+  },
+  {
+    "id": 135,
+    "name": "Skoda Slavia ",
+    "mileage": "12-16Kmpl",
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "brand": "Skoda",
+    "image": "/b42.jpeg",
+    "price": "₹11.99- 18.00 Lakh"
   }
 ]

@@ -103,7 +103,7 @@
         id: 111,
         name: "Hyundai Alcazar",
         mileage: "14.2-20.4 Kmpl",
-        type: "SUV",
+        type: "MUV",
         fuel: "Petrol/Diesel",
         brand: "Hyundai",
         image: "/b18.jpeg",
@@ -318,7 +318,37 @@
         brand: "Mahindra",
         image: "/b40.png",
         price: "₹29.15 Lakh"
-      }
+      },
+      {
+        id: 133,
+        name: "Volkswagen Virtus",
+        mileage: "18Kmpl-20Kmpl",
+        type: "Sedan",
+        fuel: "Petrol",
+        brand: "Volkswagen",
+        image: "/b41.webp",
+        price: "₹12-20 Lakh",
+      },
+      {
+        id: 134,
+        name: "Tata Safari",
+        mileage: "11-14Kmpl",
+        type: "MUV",
+        fuel: "Diesel",
+        brand: "Tata",
+        image: "/b43.jpeg", 
+        price: "₹19.99-29 Lakh",
+      },
+      {
+        id: 135,
+        name: "Skoda Slavia",
+        mileage: "12-16Kmpl",
+        type: "Sedan",
+        fuel: "Petrol",
+        brand: "Skoda",
+        image: "/b42.jpeg", 
+        price: "₹11.99-18.00 Lakh",
+      },
      
     ];
 
