@@ -109,7 +109,7 @@ const MidHero=()=>{
           Find Car By Body Type
         </h2>
         <p className="text-gray-600 text-lg">
-          Filter cars by their body style to find exactly what you're looking for
+          Filter cars by their body style to find exactly what you&apos;re looking for
         </p>
       </div>
 

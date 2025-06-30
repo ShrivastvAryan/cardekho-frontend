@@ -100,10 +100,9 @@ const DiscoverCars = () => {
         <Flex direction="column" gap={4}>
           <Box maxW="600px" mx="auto" w="full">
             <InputGroup size="lg">
-              <InputLeftElement 
-                pointerEvents="none"
-                children={<SearchIcon color="orange.400" boxSize={5} />}
-              />
+             <InputLeftElement pointerEvents="none">
+             <SearchIcon color="orange.400" boxSize={5} />
+             </InputLeftElement>
               
               <Input
                 value={searchQuery}
